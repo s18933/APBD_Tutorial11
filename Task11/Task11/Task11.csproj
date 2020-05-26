@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200526104505_AddedDateFormatToPatientTable.cs" />
+    <Compile Remove="Migrations\20200526104505_AddedDateFormatToPatientTable.Designer.cs" />
+    <Compile Remove="Migrations\20200526104857_AddedDateTimeToPatientTable.cs" />
+    <Compile Remove="Migrations\20200526104857_AddedDateTimeToPatientTable.Designer.cs" />
+    <Compile Remove="Migrations\20200526110505_AddedPrescriptionTable.cs" />
+    <Compile Remove="Migrations\20200526110505_AddedPrescriptionTable.Designer.cs" />
+    <Compile Remove="Migrations\20200526113431_AddedConfigurations.cs" />
+    <Compile Remove="Migrations\20200526113431_AddedConfigurations.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+  </ItemGroup>
+
+
+</Project>
